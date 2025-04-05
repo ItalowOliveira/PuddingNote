@@ -8,4 +8,38 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Style\Icons\add.png" />
+    <None Remove="Style\Icons\apps.png" />
+    <None Remove="Style\Icons\close.png" />
+    <None Remove="Style\Icons\list.png" />
+    <None Remove="Style\Icons\menu.png" />
+    <None Remove="Style\Icons\refresh.png" />
+    <None Remove="Style\Icons\settings.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Style\Icons\add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Style\Icons\apps.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Style\Icons\close.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Style\Icons\list.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Style\Icons\menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Style\Icons\refresh.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Style\Icons\settings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

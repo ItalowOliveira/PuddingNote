@@ -20,5 +20,27 @@ namespace WpfApp2
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CreateNote secondWindow = new CreateNote();
+
+            secondWindow.Show();
+ 
+        }
+
+
+
+
+        private void MoverMainWindow(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ButtonState == MouseButtonState.Pressed)
+                this.DragMove();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

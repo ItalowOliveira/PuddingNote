@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp2.CreateNote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Nova Nota" Height="240" Width="240"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent">
+
+    <Grid Background="Wheat">
+        <Grid Margin="0,0,0,0">
+        <Grid Margin="0,0,0,205" Background="White" MouseLeftButtonDown="MoverWindowNotas">
+            <Button Style="{StaticResource IconButtonTheme}" HorizontalAlignment="Left"  Margin="185,0,0,0" VerticalAlignment="Center" Height="18" Width="20" RenderTransformOrigin="0.69,0.501">
+                <Button.Content>
+                    <Image Source="/Style/Icons/menu.png" Height="10" Width="10"/>
+                </Button.Content>
+            </Button>
+            <Button Style="{StaticResource IconButtonTheme}" HorizontalAlignment="Left" Margin="210,0,0,0" VerticalAlignment="Center" Height="18" Width="20" RenderTransformOrigin="0.69,0.501" Click="Button_Click">
+                <Button.Content>
+                    <Image Source="/Style/Icons/close.png" Height="10" Width="10"/>
+                </Button.Content>
+            </Button>
+            <TextBox Style="{StaticResource TextBoxNotesTheme}" Text="Nova Nota" HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="26"/>
+        </Grid>
+        <TextBox Style="{StaticResource TextBoxNotesTheme}" HorizontalAlignment="Center" Margin="0,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="179"/>
+
+    </Grid>
+    </Grid>
+</Window>

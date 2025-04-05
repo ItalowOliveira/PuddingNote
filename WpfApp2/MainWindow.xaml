@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="920"
         WindowStyle="None"
-        ResizeMode="NoResize"
+        ResizeMode="CanResize"
         Background="Transparent"
         AllowsTransparency="True"
         >
@@ -15,14 +15,16 @@
 
     <Border Background="#202124"
            CornerRadius="20">
-        <Grid>
+
+        <Grid Margin="0,0,0,18">
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition  Height="75"/>
+                <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
@@ -33,8 +35,16 @@
            FontSize="20"   
            Margin="20, 0, 0, 0"            
            />
-            
-         
+            <!-- Arrastar Tela -->
+            <Grid MouseLeftButtonDown="MoverMainWindow" Grid.ColumnSpan="2" Background="Transparent"/>
+
+            <StackPanel Grid.Column="1" Margin="88,10,88,10" Grid.Row="1" Background="Aqua">
+                
+                
+                
+                
+            </StackPanel>
+
             <StackPanel Grid.Row="1">
 
 
@@ -63,33 +73,30 @@
 
             <TextBox Width="250" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Column="1"/>
 
-            
-            
-            
-             <Button  Style="{StaticResource IconButtonTheme}" Width="50" Height="40" Grid.Column="1" Margin="475,18,195,17" >
+            <Button  Style="{StaticResource IconButtonTheme}" Width="50" Height="40" Grid.Column="1" Margin="475,18,195,17" Click="Button_Click" >
                 <Button.Content>
-                    <Image Source="/Style/Icons/add.png"/>
+                    <Image Source="/Style/Icons/add.png" Height="28" Width="25"/>
                 </Button.Content>
             </Button>
 
             <Button  Style="{StaticResource IconButtonTheme}" Width="50" Height="40" Grid.Column="1" Margin="535,18,135,17">
                 <Button.Content>
-                    <Image Source="/Style/Icons/refresh.png"/>
+                    <Image Source="/Style/Icons/refresh.png" Height="28" Width="25"/>
                 </Button.Content>
             </Button>
 
             <Button  Style="{StaticResource IconButtonTheme}" Width="50" Height="40" Grid.Column="1" Margin="595,18,75,17">
                 <Button.Content>
-                    <Image Source="/Style/Icons/apps.png"/>
+                    <Image Source="/Style/Icons/apps.png" Height="28" Width="25"/>
                 </Button.Content>
             </Button>
 
-            <Button  Style="{StaticResource IconButtonTheme}" Width="50" Height="40" Grid.Column="1" Margin="655,18,15,17">
+            <Button  Style="{StaticResource IconButtonTheme}" Width="50" Height="40" Grid.Column="1" Margin="655,18,15,17" Click="Button_Click_1">
                 <Button.Content>
-                    <Image Source="/Style/Icons/settings.png"/>
+                    <Image Source="/Style/Icons/close.png" Height="28" Width="25"/>
                 </Button.Content>
             </Button>
-
+            
         </Grid>
     </Border>
 
