@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 
 namespace WpfApp2.Models
 {
-    internal class Notes
+    public class Notes
     {
-
-        public string Id { get; set; }
+        private static int proximoId = 1;
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public Notes(string id, string name, String description){
+        public static int GlobalNoteId;
 
+        public Notes(string name, String description) {
 
-            Id = id;
+            Id = proximoId++;
             Name = name;
             Description = description;
 
-         }
+        }
 
     }
 

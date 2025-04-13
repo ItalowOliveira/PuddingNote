@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp2.Models;
 
 namespace WpfApp2
 {
@@ -27,12 +29,31 @@ namespace WpfApp2
         }
         public CreateNote()
         {
+
             InitializeComponent();
+            txtNome.Text = "Teste";
+            txtDescricao.Text = "Teste";
+
+            Notes Nota = new Notes(txtNome.Text, txtDescricao.Text);
+
+            string teste = Nota.Id.ToString();
+
+            Debug.WriteLine(teste, Nota.Name, Nota.Description);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+
+        private void txtDescricao_TextChanged(object sender, TextChangedEventArgs e)
+        {
+        }
+
+        private void txtNome_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

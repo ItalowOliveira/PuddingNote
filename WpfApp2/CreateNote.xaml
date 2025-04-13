@@ -23,9 +23,9 @@
                     <Image Source="/Style/Icons/close.png" Height="10" Width="10"/>
                 </Button.Content>
             </Button>
-            <TextBox Style="{StaticResource TextBoxNotesTheme}" Text="Nova Nota" HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="26"/>
+            <TextBox x:Name="txtNome" Style="{StaticResource TextBoxNotesTheme}" Text="Teste" HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="26"/>
         </Grid>
-        <TextBox Style="{StaticResource TextBoxNotesTheme}" HorizontalAlignment="Center" Margin="0,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="179"/>
+        <TextBox x:Name="txtDescricao" Style="{StaticResource TextBoxNotesTheme}" HorizontalAlignment="Center" Margin="0,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="179" Text="Teste"/>
 
     </Grid>
     </Grid>

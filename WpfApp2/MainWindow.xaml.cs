@@ -8,6 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
+using System.Drawing;
+using WpfApp2.Models;
 
 namespace WpfApp2
 {
@@ -16,6 +19,8 @@ namespace WpfApp2
     /// </summary>
     public partial class MainWindow : Window
     {
+
+   
         public MainWindow()
         {
             InitializeComponent();
@@ -30,8 +35,6 @@ namespace WpfApp2
         }
 
 
-
-
         private void MoverMainWindow(object sender, MouseButtonEventArgs e)
         {
             if (e.ButtonState == MouseButtonState.Pressed)
@@ -40,7 +43,9 @@ namespace WpfApp2
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Close();
+
+            this.Hide();
+
         }
     }
 }

@@ -8,6 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="System.Windows.Forms"></PackageReference>
+		<PackageReference Include="System.Drawing.Common" Version="9.0.4"></PackageReference>
+	</ItemGroup>
+	
+	
   <ItemGroup>
     <None Remove="Style\Icons\add.png" />
     <None Remove="Style\Icons\apps.png" />
@@ -16,6 +22,26 @@
     <None Remove="Style\Icons\menu.png" />
     <None Remove="Style\Icons\refresh.png" />
     <None Remove="Style\Icons\settings.png" />
+    <None Remove="Style\Icons\temporario.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+    </COMReference>
+    <COMReference Include="{d37e2a3e-8545-3a39-9f4f-31827c9124ab}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>d37e2a3e-8545-3a39-9f4f-31827c9124ab</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Style\Icons\temporario.ico" />
   </ItemGroup>
 
   <ItemGroup>
